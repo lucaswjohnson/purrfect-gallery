@@ -2,25 +2,39 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  
-  .theme-header {
-    color: #fff;
-    margin-bottom: 10px;
-    padding-bottom: 5px;
-    border-bottom: 1px solid #fff;
-    font-weight: 600;
+}
+
+.theme-header {
+  color: #fff;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #fff;
+  font-weight: 600;
+}
+
+.theme-button {
+  width: 20px;
+  height: 20px;
+  margin: 0 10px;
+  -webkit-appearance: none;
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid #fff;
+
+  &:hover {
+    cursor: pointer;
   }
 
-  .theme-button {
-    width: 20px;
-    height: 20px;
-    margin: 0 10px;
-    -webkit-appearance: none;
-    outline: none;
-    border-radius: 5px;
-
-    &:hover {
-      cursor: pointer;
-    }
+  &.orange {
+    background-color: #ef953b;
+  }
+  &.blue {
+    background-color: #4688B2;
+  }
+  &.green {
+    background-color: #7CC1AC;
+  }
+  &.purple {
+    background-color: #9A7F92;
   }
 }
