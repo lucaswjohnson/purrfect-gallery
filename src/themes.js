@@ -2,21 +2,21 @@ export const themes = {
   blue: {
     primary: '#fff',
     secondary: '#4688B2',
-    accent: '#BE996B'
+    accent: '#cca97f'
   },
   green: {
-    primary: '#00989C',
+    primary: '#fff',
     secondary: '#7CC1AC',
     accent: '#E27D5F'
   },
   purple: {
-    color: '#fff',
-    backgroundColor: '#B29BC7',
+    primary: '#fff',
+    secondary: '#B29BC7',
     accent: '#F172A1'
   },
   orange: {
-    color: '#000',
-    backgroundColor: '#F4976C',
-    accent: '#FBE8A6'
+    primary: '#fff',
+    secondary: '#90c9d1',
+    accent: '#F4976C'
   }
 }
