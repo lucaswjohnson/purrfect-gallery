@@ -5,6 +5,19 @@
   overflow: hidden;
 }
 
+.home-title {
+  min-width: 20%;
+  position: relative;
+  left: 20%;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 5%;
+}
+
 .home-nav {
   min-width: 20%;
   display: flex;
