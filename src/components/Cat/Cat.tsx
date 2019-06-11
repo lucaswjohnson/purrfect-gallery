@@ -1,4 +1,5 @@
 import React from 'react'
+import { connect } from 'react-redux'
 
 interface IProps {
   text?: string,
@@ -21,4 +22,16 @@ const Cat: React.FC<IProps> = ({
   />
 )
 
-export default Cat
+const mapStateToProps = (state: any) => {
+  // Would probably look nicer destructured
+  return {
+    text: state.catReducer.text,
+    fontSize: state.catReducer.fontSize,
+    textColor: state.catReducer.textColor,
+    filter: state.catReducer.filter,
+    width: state.catReducer.width,
+    height: state.catReducer.height
+  }
+}
+
+export default connect(mapStateToProps)(Cat)
