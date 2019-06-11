@@ -3,7 +3,11 @@ import './Theme.scss'
 import { connect } from 'react-redux'
 import { handleThemeChange } from '../../actions/index'
 
-const Theme = ({ dispatch }) => (
+interface IProps {
+  dispatch: Function
+}
+
+const Theme: React.SFC<IProps> = ({ dispatch }) => (
   <div className="home-theme">
     <div className="theme-header">
       Theme
