@@ -1,6 +1,16 @@
-import React from 'react';
+import React from 'react'
 
-const Cat = ({
+interface IProps {
+  text?: string,
+  fontSize?: string,
+  textColor?: string,
+  filter?: string,
+  width?: string,
+  height?: string,
+  id?: string
+}
+
+const Cat: React.FC<IProps> = ({
   text = '%20', fontSize = '50', textColor = 'white',
   filter = '', width = '', height = '', id = Math.random()
 }) => (
