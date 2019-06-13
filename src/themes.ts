@@ -1,4 +1,17 @@
-export const themes = {
+interface ITheme {
+  primary: string,
+  secondary: string,
+  accent: string
+}
+
+interface IThemes {
+  blue: ITheme,
+  green: ITheme,
+  purple: ITheme,
+  orange: ITheme
+}
+
+export const themes: IThemes = {
   blue: {
     primary: '#fff',
     secondary: '#4688B2',
