@@ -5,10 +5,7 @@ interface ITheme {
 }
 
 interface IThemes {
-  blue: ITheme,
-  green: ITheme,
-  purple: ITheme,
-  orange: ITheme
+  [key: string]: ITheme
 }
 
 export const themes: IThemes = {

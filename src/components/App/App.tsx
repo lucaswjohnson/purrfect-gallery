@@ -5,8 +5,12 @@ import Theme from '../Theme/Theme'
 import { themes } from '../../themes'
 import { connect } from 'react-redux'
 
-const App = ({ theme = 'blue' }) => {
-  const getTheme = (type) => {
+interface IApp {
+  theme: string
+}
+
+const App = ({ theme = 'blue' }: IApp) => {
+  const getTheme = (type: string) => {
     const { primary, secondary, accent } = themes[theme]
     const isAccent = type === 'accent'
 
@@ -35,7 +39,7 @@ const App = ({ theme = 'blue' }) => {
   )
 }
 
-const mapStateToProps = (state) => {
+const mapStateToProps = (state: any) => {
   return {
     theme: state.themeReducer.theme
   }
