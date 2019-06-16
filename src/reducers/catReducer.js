@@ -9,18 +9,38 @@ const initialState = {
 
 const catReducer = (state = initialState, action) => {
   switch (action.type) {
-    case 'CHANGE_GALLERY':
+    case 'CHANGE_TEXT':
       return {
         ...state,
-        text: action.text,
-        fontSize: action.fontSize,
-        textColor: action.textColor,
-        filter: action.filter,
-        width: action.width,
+        text: action.text
+      }
+    case 'CHANGE_FONT_SIZE':
+      return {
+        ...state,
+        fontSize: action.fontSize
+      }
+    case 'CHANGE_TEXT_COLOR':
+      return {
+        ...state,
+        textColor: action.textColor
+      }
+    case 'CHANGE_FILTER':
+      return {
+        ...state,
+        filter: action.filter
+      }
+    case 'CHANGE_WIDTH':
+      return {
+        ...state,
+        width: action.width
+      }
+    case 'CHANGE_HEIGHT':
+      return {
+        ...state,
         height: action.height
       }
-      default:
-        return state
+    default:
+      return state
   }
 }
 

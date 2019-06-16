@@ -23,14 +23,15 @@ const Cat: React.FC<IProps> = ({
 )
 
 const mapStateToProps = (state: any) => {
-  // Would probably look nicer destructured
+  const { text, fontSize, textColor, filter, width, height } = state.catReducer
+
   return {
-    text: state.catReducer.text,
-    fontSize: state.catReducer.fontSize,
-    textColor: state.catReducer.textColor,
-    filter: state.catReducer.filter,
-    width: state.catReducer.width,
-    height: state.catReducer.height
+    text,
+    fontSize,
+    textColor,
+    filter,
+    width,
+    height
   }
 }
 
